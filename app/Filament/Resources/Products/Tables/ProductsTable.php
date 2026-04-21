@@ -20,7 +20,11 @@ class ProductsTable
                 TextColumn::make('price')
                     ->money()
                     ->sortable(),
-                ImageColumn::make('image'),
+                ImageColumn::make('image')
+                    ->label('Image'),
+                TextColumn::make('stock')
+                    ->label('Stock')
+                    ->sortable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
