@@ -18,7 +18,7 @@ class ProductsTable
                 TextColumn::make('name')
                     ->searchable(),
                 TextColumn::make('price')
-                    ->money()
+                    ->money('Rp')
                     ->sortable(),
                 ImageColumn::make('image')
                     ->label('Image'),
